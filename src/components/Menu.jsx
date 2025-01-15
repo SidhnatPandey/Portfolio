@@ -5,7 +5,7 @@ export const Menu = (props) => {
 
   const handleResumeClick = () => {
     const googleDriveResumeLink =
-      "https://drive.google.com/file/d/1cffRW8koTycghkFh3qqQ9Ietz7TTk5hP/view";
+      "https://drive.google.com/file/d/1CsqUp6ae8GoIpc1XRPBmEd6nskkDTc7q/view?usp=sharing";
     window.open(googleDriveResumeLink, "_blank");
   };
 

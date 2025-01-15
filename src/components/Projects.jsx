@@ -49,7 +49,13 @@ const Project = (props) => {
     <group {...props}>
       <mesh
         position-z={-0.001}
-        // onClick={() => window.open(project.url, "_blank")}
+        onClick={() => window.open(project.url, "_blank")}
+        onPointerOver={(e) => {
+          document.body.style.cursor = "pointer";
+        }}
+        onPointerOut={(e) => {
+          document.body.style.cursor = "default";
+        }}
         ref={background}
       >
         <planeGeometry args={[2.2, 2]} />
